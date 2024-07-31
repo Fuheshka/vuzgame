@@ -1,0 +1,4 @@
+repository "vuzgame@Fushitsu@cloud"
+  path "/"
+    br "/main"
+    co "/main"
