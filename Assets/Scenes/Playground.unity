@@ -493,6 +493,7 @@ GameObject:
   - component: {fileID: 1153353234}
   - component: {fileID: 1153353238}
   - component: {fileID: 1153353239}
+  - component: {fileID: 1153353240}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Cube
@@ -623,6 +624,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 584be073bc7888b49bebc9e70643ade4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  jumpForce: 5
+--- !u!114 &1153353240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153353233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956dd3bd971ed79498b0161bbeb48ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
@@ -833,8 +848,8 @@ Transform:
   m_GameObject: {fileID: 1392131541}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.04, y: 2.04, z: 0.04}
-  m_LocalScale: {x: 1, y: 5.154533, z: 36.090427}
+  m_LocalPosition: {x: 26.04, y: 2.04, z: 14.8693}
+  m_LocalScale: {x: 1, y: 5.154533, z: 65.74954}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1205,13 +1220,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532145065}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21832976, y: -0, z: -0, w: 0.97587514}
-  m_LocalPosition: {x: 0, y: 17, z: -24.23}
-  m_LocalScale: {x: 1, y: 0.8757, z: 1}
+  m_LocalRotation: {x: 0.35913637, y: -0, z: -0, w: 0.9332851}
+  m_LocalPosition: {x: 0, y: 27.31, z: -20.79}
+  m_LocalScale: {x: 1, y: 0.87569994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 25.222, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 42.094, y: 0, z: 0}
+--- !u!1 &1852982146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3504345185765928682, guid: f7472f6b73f414b43a12fc26c954475f, type: 3}
+  m_PrefabInstance: {fileID: 7536306081283885716}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1852982151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852982146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ebd376a8c478da44adcd2c08a4fae60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shape1: {fileID: 1153353233}
+  shape2: {fileID: 2043958338}
 --- !u!1 &2020474793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,8 +1345,8 @@ Transform:
   m_GameObject: {fileID: 2020474793}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 51.097084, y: 1, z: 36.068893}
+  m_LocalPosition: {x: 0, y: -0, z: 14.9514}
+  m_LocalScale: {x: 51.097084, y: 1, z: 65.97001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1331,6 +1365,7 @@ GameObject:
   - component: {fileID: 2043958340}
   - component: {fileID: 2043958344}
   - component: {fileID: 2043958345}
+  - component: {fileID: 2043958346}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Sphere
@@ -1465,6 +1500,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpForce: 5
+--- !u!114 &2043958346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043958338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 584be073bc7888b49bebc9e70643ade4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  jumpForce: 5
 --- !u!1 &2044310500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,8 +1613,8 @@ Transform:
   m_GameObject: {fileID: 2044310500}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.06, y: 2.04, z: 0.04}
-  m_LocalScale: {x: 1, y: 5.154533, z: 36.090427}
+  m_LocalPosition: {x: -26.06, y: 2.04, z: 14.9599}
+  m_LocalScale: {x: 1, y: 5.154533, z: 65.92999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1732,7 +1781,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3504345185765928682, guid: f7472f6b73f414b43a12fc26c954475f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1852982151}
   m_SourcePrefab: {fileID: 100100000, guid: f7472f6b73f414b43a12fc26c954475f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
