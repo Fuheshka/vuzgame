@@ -20,9 +20,9 @@ public class CubeController : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         rb.AddForce(movement * speed);
 
-        /*if (Input.GetKeyDown(KeyCode.RightControl))
+        if (Input.GetKeyDown(KeyCode.RightControl))
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        }*/
+        }
     }
 }
